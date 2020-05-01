@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:hint="Name"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:hint="Mobile No."
+                android:inputType="number"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/nationality"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:entries="@array/country"
+                android:hint="Nationality"
+                android:inputType="text"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:entries="@array/gender"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:hint="Address"
+                android:inputType="textLongMessage"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:hint="PinCode"
+                android:inputType="number"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/submitRegistration"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5sp"
+                android:background="#000000"
+                android:onClick="submitRegistration"
+                android:text="Register"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
+
+
